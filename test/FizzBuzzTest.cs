@@ -5,18 +5,24 @@ namespace FizzBuzzKata
 {
     public class FizzBuzzTest
     {
+        private FizzBuzz fizzBuzz = new FizzBuzz();
+
         [Fact]
-        public void whenSent1Returns1()
+        public void WhenSent1Returns1()
         {
-            var fizzBuzz = new FizzBuzz();
             Assert.Equal("1", fizzBuzz.Fizz(1));
         }
 
         [Fact]
-        public void whenSent2Returns2()
+        public void WhenSent2Returns2()
         {
-            var fizzBuzz = new FizzBuzz();
             Assert.Equal("2", fizzBuzz.Fizz(2));
+        }
+
+        [Fact]
+        public void WhenSent3ReturnsFizz()
+        {
+            Assert.Equal("fizz", fizzBuzz.Fizz(3));
         }
     }
 }
