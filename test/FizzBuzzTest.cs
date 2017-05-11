@@ -24,5 +24,17 @@ namespace FizzBuzzKata
         {
             Assert.Equal("fizz", fizzBuzz.Fizz(3));
         }
+
+        [Fact]
+        public void WhenSent4Returns4()
+        {
+            Assert.Equal("4", fizzBuzz.Fizz(4));
+        }
+
+        [Fact]
+        public void WhenSent5ReturnsBuzz()
+        {
+            Assert.Equal("buzz", fizzBuzz.Fizz(5));
+        }
     }
 }
