@@ -6,7 +6,7 @@ namespace FizzBuzzKata
     {
         public string Fizz(int value)
         {
-            return ("1");
+            return (value.ToString());
         }
     }
 }

@@ -11,5 +11,12 @@ namespace FizzBuzzKata
             var fizzBuzz = new FizzBuzz();
             Assert.Equal("1", fizzBuzz.Fizz(1));
         }
+
+        [Fact]
+        public void whenSent2Returns2()
+        {
+            var fizzBuzz = new FizzBuzz();
+            Assert.Equal("2", fizzBuzz.Fizz(2));
+        }
     }
 }
